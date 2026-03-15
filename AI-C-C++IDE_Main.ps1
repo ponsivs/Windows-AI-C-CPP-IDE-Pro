@@ -4,7 +4,7 @@
     IGRF AI C/C++ IDE Pro - Educational IDE for learning C/C++ programming
 .DESCRIPTION
     This application provides an AI-powered IDE for students to learn C/C++ programming.
-    It generates code using NVIDIA AI, compiles with bundled GCC compiler, and provides
+    It generates code using AI, compiles with bundled GCC compiler, and provides
     voice explanations for educational purposes. The application creates temporary files
     and processes for legitimate educational operations.
 .NOTES
@@ -26,7 +26,7 @@
 .COMPONENT
     Requires: Windows OS, .NET Framework 4.5+, GCC compiler (bundled)
 .FUNCTIONALITY
-    - AI-powered C/C++ code generation via NVIDIA API
+    - AI-powered C/C++ code generation via AI API
     - Built-in GCC compiler for code compilation
     - Voice explanations for learning (male/female voices)
     - Visual algorithm display
@@ -280,17 +280,17 @@ if ($global:Logo) {
 }
 # ==================== END SPLASH SCREEN ====================
 
-# ==================== NVIDIA NIM API CONFIGURATION ====================
+# ==================== AI API CONFIGURATION ====================
 # Fixed API key for IGRF AI C/C++ IDE Pro
-$global:NvidiaApiKey = "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"
+$global:AIApiKey = "Your API Key Here."
 
-# Working NVIDIA endpoints
+# Working endpoints
 $global:Apis = @(
     @{
-        Name = "NVIDIA Llama-3-70B"
-        Endpoint = "https://integrate.api.nvidia.com/v1/chat/completions"
-        Model = "meta/llama-3.1-70b-instruct"
-        Key = $global:NvidiaApiKey
+        Name = "*******"
+        Endpoint = "https://^^^^^"
+        Model = "******"
+        Key = $global:ApiKey
         AuthType = "Bearer"
         Priority = 1
         Working = $true
@@ -1966,17 +1966,17 @@ function Show-AboutDialog {
     $aboutForm.ShowDialog()
 }
 
-# ==================== NVIDIA AI API COMMUNICATION ====================
-# This function communicates with NVIDIA's AI API for code generation.
+# ==================== AI API COMMUNICATION ====================
+# This function communicates with API's AI API for code generation.
 # All network operations are:
 # 1. Encrypted (HTTPS) - all traffic is secure
-# 2. Only to NVIDIA's official endpoints (integrate.api.nvidia.com)
+# 2. Only to API's official endpoints (integrate.api.API.com)
 # 3. Only with the user's problem statement (no personal data collected)
 # 4. Required for the AI code generation feature to function
 #
 # The API key is included in the application for convenience.
-# Users can replace it with their own NVIDIA API key if desired at:
-# https://build.nvidia.com/
+# Users can replace it with their own API key if desired at:
+# https://******/
 #
 # Data transmitted:
 # - User's problem statement (for code generation)
